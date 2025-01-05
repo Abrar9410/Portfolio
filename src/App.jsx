@@ -1,5 +1,9 @@
 import Banner from "./components/Banner"
+import Contact from "./components/Contact"
+import MyStory from "./components/MyStory"
 import Navbar from "./components/Navbar"
+import Projects from "./components/Projects"
+import Skills from "./components/Skills"
 
 
 function App() {
@@ -10,6 +14,10 @@ function App() {
     <>
       <Navbar></Navbar>
       <Banner></Banner>
+      <MyStory></MyStory>
+      <Skills></Skills>
+      <Projects></Projects>
+      <Contact></Contact>
     </>
   )
 }

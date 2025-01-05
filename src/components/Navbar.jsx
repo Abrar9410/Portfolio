@@ -3,8 +3,8 @@ import logo from "../assets/my_logo.PNG"
 
 const Navbar = () => {
     return (
-        <div className="py-2 sm:py-4">
-            <div className="w-11/12 md:w-10/12 mx-auto py-2 px-2 sm:px-4 rounded-xl border-2 border-[#01eeff] bg-black sticky top-0 z-10 backdrop-blur-md">
+        <div className="py-2 sm:py-4 sticky top-0 z-10 backdrop-blur-md">
+            <div className="w-11/12 md:w-10/12 mx-auto py-2 px-2 sm:px-4 rounded-xl border-2 border-[#01EEFF] bg-black">
                 <div className="flex justify-between items-center">
                     <div className="flex items-center gap-1 min-[200px]:gap-2 min-[250px]:ml-2 min-[300px]:gap-3 min-[400px]:ml-3 sm:ml-0 sm:gap-0">
                         <div className="dropdown">
@@ -25,11 +25,11 @@ const Navbar = () => {
                             <ul
                                 tabIndex={0}
                                 className="menu menu-sm dropdown-content bg-black text-white rounded-box z-[1] mt-3 max-[200px]:w-max w-52 p-2 shadow">
-                                <li><a>Home</a></li>
-                                <li><a>About Me</a></li>
-                                <li><a>Skills</a></li>
-                                <li><a>Projects</a></li>
-                                <li><a>Contact Me</a></li>
+                                <li className="hover:text-[#01EEFF] hover:scale-105"><a href="#">Home</a></li>
+                                <li className="hover:text-[#01EEFF] hover:scale-105"><a href="#aboutMe">About Me</a></li>
+                                <li className="hover:text-[#01EEFF] hover:scale-105"><a href="#skills">Skills</a></li>
+                                <li className="hover:text-[#01EEFF] hover:scale-105"><a href="#projects">Projects</a></li>
+                                <li className="hover:text-[#01EEFF] hover:scale-105"><a href="#contact">Contact Me</a></li>
                             </ul>
                         </div>
                         <a>
@@ -38,11 +38,11 @@ const Navbar = () => {
                     </div>
                     <div className="navbar-center hidden sm:flex">
                         <ul className="flex justify-center items-center gap-3 text-white font-semibold md:text-lg xl:text-xl">
-                            <li><a>Home</a></li>
-                            <li><a>About Me</a></li>
-                            <li><a>Skills</a></li>
-                            <li><a>Projects</a></li>
-                            <li><a>Contact Me</a></li>
+                            <li className="hover:text-[#01EEFF] hover:scale-105"><a href="#">Home</a></li>
+                            <li className="hover:text-[#01EEFF] hover:scale-105"><a href="#aboutMe">About Me</a></li>
+                            <li className="hover:text-[#01EEFF] hover:scale-105"><a href="#skills">Skills</a></li>
+                            <li className="hover:text-[#01EEFF] hover:scale-105"><a href="#projects">Projects</a></li>
+                            <li className="hover:text-[#01EEFF] hover:scale-105"><a href="#contact">Contact Me</a></li>
                         </ul>
                     </div>
                     <div>
