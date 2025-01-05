@@ -24,7 +24,7 @@ const Navbar = () => {
                             </div>
                             <ul
                                 tabIndex={0}
-                                className="menu menu-sm dropdown-content bg-black text-white rounded-box z-[1] mt-3 max-[200px]:w-max w-52 p-2 shadow">
+                                className="menu menu-sm dropdown-content bg-black text-white rounded-box z-[1] mt-3 w-max p-2 shadow">
                                 <li className="hover:text-[#01EEFF] hover:scale-105"><a href="#">Home</a></li>
                                 <li className="hover:text-[#01EEFF] hover:scale-105"><a href="#aboutMe">About Me</a></li>
                                 <li className="hover:text-[#01EEFF] hover:scale-105"><a href="#skills">Skills</a></li>

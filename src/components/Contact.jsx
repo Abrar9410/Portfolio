@@ -1,15 +1,12 @@
 import emailjs from 'emailjs-com';
-import { useState } from 'react';
 import { FaPhoneAlt } from 'react-icons/fa';
 import { FaLocationDot } from 'react-icons/fa6';
 import { IoLogoWhatsapp } from 'react-icons/io';
 import { toast } from 'react-toastify';
+import Title from './Title';
 
 const Contact = () => {
 
-    const [status, setStatus] = useState('');
-
-    // Handle form submission
     const handleSubmit = e => {
         e.preventDefault();
 
@@ -42,6 +39,7 @@ const Contact = () => {
 
     return (
         <div id="contact" className="bg-black">
+            <Title title="Contact Me"></Title>
             <div className="w-11/12 md:w-10/12 mx-auto flex flex-col sm:flex-row justify-between">
                 <div className="flex flex-col items-center text-white w-full sm:w-1/2 p-8">
                     <p className="w-max text-center font-semibold text-lg min-[250px]:text-xl sm:text-2xl lg:text-3xl max-sm:mb-3 mb-6">Send Message</p>
