@@ -32,7 +32,7 @@ const Navbar = () => {
                                 <li className="hover:text-[#01EEFF] hover:scale-105"><a href="#contact">Contact Me</a></li>
                             </ul>
                         </div>
-                        <a>
+                        <a href="#">
                             <img src={logo} alt="logo" className="w-10 min-[250px]:w-12 min-[400px]:w-14 xl:w-16 2xl:w-20"/>
                         </a>
                     </div>
@@ -46,7 +46,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div>
-                        <a>
+                        <a href="#contact">
                             <button className="w-max flex justify-center items-center gap-1 text-center min-[300px]:text-lg px-3 py-2 rounded-lg bg-[#01EEFF] text-white font-bold hover:bg-white hover:text-[#01EEFF] hover:scale-105 outline-none">
                                 Hire Me
                                 <MdArrowOutward />
