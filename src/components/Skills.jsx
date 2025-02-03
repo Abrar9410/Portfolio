@@ -14,7 +14,7 @@ import Title from "./Title";
 
 const Skills = () => {
     return (
-        <div id="skills" className="mb-12">
+        <div id="skills" className="mb-14">
             <Title title="My Skills"></Title>
             <div className="w-11/12 sm:w-10/12 mx-auto p-4 rounded-xl bg-black">
                 <Marquee pauseOnHover={true} speed={100} className="space-x-10 text-lg font-semibold">

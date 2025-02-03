@@ -1,9 +1,9 @@
-import { FaDownload, FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaDownload, FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import myPhoto from "../assets/Abrar_Shahriar.JPG"
 
 const Banner = () => {
     return (
-        <div className="w-11/12 md:w-10/12 mx-auto mb-12 flex flex-col md:flex-row md:justify-between items-center bg-gradient-to-b md:bg-gradient-to-r from-[#151925] to-black relative">
+        <div className="w-11/12 md:w-10/12 mx-auto mb-14 flex flex-col md:flex-row md:justify-between items-center bg-gradient-to-b md:bg-gradient-to-r from-[#151925] to-black relative">
             <div className="flex flex-col max-md:items-center max-md:text-center gap-1 min-[500px]:gap-2 md:gap-3 xl:gap-4 md:w-1/2 py-4 md:pl-4">
                 <p className="text-white min-[300px]:text-lg min-[400px]:text-xl md:text-2xl xl:text-3xl 2xl:text-4xl font-semibold">Hello, I'm</p>
                 <h1 className="text-white text-xl min-[300px]:text-2xl min-[400px]:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-extrabold">

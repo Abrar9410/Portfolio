@@ -6,7 +6,7 @@ import Title from "./Title";
 
 const Projects = () => {
     return (
-        <div id="projects" className="mb-12">
+        <div id="projects" className="mb-14">
             <Title title="My Projects"></Title>
             <div className="w-11/12 md:w-10/12 mx-auto bg-black rounded-xl p-8">
                 <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
