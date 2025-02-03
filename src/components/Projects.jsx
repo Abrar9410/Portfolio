@@ -1,6 +1,6 @@
-import project1Img from "../assets/project-a11(1).PNG";
-import project2Img from "../assets/project-a10(1).PNG";
-import project3Img from "../assets/project-a9(1).PNG";
+import project1Img from "../assets/project-a12(1).PNG";
+import project2Img from "../assets/project-a11(1).PNG";
+import project3Img from "../assets/project-a10(1).PNG";
 import Title from "./Title";
 
 
@@ -16,10 +16,10 @@ const Projects = () => {
                             <a href="">
                                 <button className="w-max text-sm sm:text-base font-semibold px-2 py-1 rounded-lg text-white bg-[#01EEFF] hover:text-[#01EEFF] hover:bg-white outline-none">View Details</button>
                             </a>
-                            <a href="https://github.com/programming-hero-web-course2/b10a11-client-side-Abrar9410" target="_blank">
+                            <a href="https://github.com/Abrar9410/CareCamp-MCMS" target="_blank">
                                 <button className="w-max text-sm sm:text-base font-semibold px-2 py-1 rounded-lg text-white bg-[#01EEFF] hover:text-[#01EEFF] hover:bg-white outline-none">GitHub Repo</button>
                             </a>
-                            <a href="https://asssignment-11-trendy-talks-blog-site.netlify.app/" target="_blank">
+                            <a href="https://carecamp-mcms.netlify.app/" target="_blank">
                                 <button className="w-max text-sm sm:text-base font-semibold px-2 py-1 rounded-lg text-white bg-[#01EEFF] hover:text-[#01EEFF] hover:bg-white outline-none">Live Link</button>
                             </a>
                         </div>
@@ -30,10 +30,10 @@ const Projects = () => {
                             <a href="">
                                 <button className="w-max text-sm sm:text-base font-semibold px-2 py-1 rounded-lg text-white bg-[#01EEFF] hover:text-[#01EEFF] hover:bg-white outline-none">View Details</button>
                             </a>
-                            <a href="https://github.com/programming-hero-web-course2/b10-a10-client-side-Abrar9410?tab=readme-ov-file" target="_blank">
+                            <a href="https://github.com/Abrar9410/TrendyTalks" target="_blank">
                                 <button className="w-max text-sm sm:text-base font-semibold px-2 py-1 rounded-lg text-white bg-[#01EEFF] hover:text-[#01EEFF] hover:bg-white outline-none">GitHub Repo</button>
                             </a>
-                            <a href="https://assignment-10-chill-gamer.netlify.app/" target="_blank">
+                            <a href="https://asssignment-11-trendy-talks-blog-site.netlify.app/" target="_blank">
                                 <button className="w-max text-sm sm:text-base font-semibold px-2 py-1 rounded-lg text-white bg-[#01EEFF] hover:text-[#01EEFF] hover:bg-white outline-none">Live Link</button>
                             </a>
                         </div>
@@ -44,10 +44,10 @@ const Projects = () => {
                             <a href="">
                                 <button className="w-max text-sm sm:text-base font-semibold px-2 py-1 rounded-lg text-white bg-[#01EEFF] hover:text-[#01EEFF] hover:bg-white outline-none">View Details</button>
                             </a>
-                            <a href="https://github.com/programming-hero-web-course1/b10-a9-authentication-Abrar9410" target="_blank">
+                            <a href="https://github.com/Abrar9410/ChillGamer" target="_blank">
                                 <button className="w-max text-sm sm:text-base font-semibold px-2 py-1 rounded-lg text-white bg-[#01EEFF] hover:text-[#01EEFF] hover:bg-white outline-none">GitHub Repo</button>
                             </a>
-                            <a href="https://assignment09-discount-pro.netlify.app/" target="_blank">
+                            <a href="https://assignment-10-chill-gamer.netlify.app/" target="_blank">
                                 <button className="w-max text-sm sm:text-base font-semibold px-2 py-1 rounded-lg text-white bg-[#01EEFF] hover:text-[#01EEFF] hover:bg-white outline-none">Live Link</button>
                             </a>
                         </div>
