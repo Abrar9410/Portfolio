@@ -38,7 +38,7 @@ const Contact = () => {
     };
 
     return (
-        <div id="contact" className="bg-black">
+        <section id="contact" className="bg-black">
             <Title title="Contact Me"></Title>
             <div className="w-11/12 md:w-10/12 mx-auto flex flex-col sm:flex-row justify-between">
                 <div className="flex flex-col items-center text-white w-full sm:w-1/2 p-8">
@@ -91,7 +91,7 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

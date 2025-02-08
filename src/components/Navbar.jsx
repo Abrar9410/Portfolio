@@ -1,7 +1,112 @@
 import { MdArrowOutward } from "react-icons/md";
 import logo from "../assets/my_logo.PNG"
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
+
+    const [activeSection, setActiveSection] = useState("home");
+
+    const handleScroll = () => {
+        const sections = document.querySelectorAll("section");
+        let currentSection = "home"; // Default
+
+        const scrollPosition = window.scrollY + window.innerHeight / 2; // Track the middle of the viewport
+
+        sections.forEach((section) => {
+            const sectionTop = section.offsetTop - 105;
+            const sectionBottom = sectionTop + section.offsetHeight;
+
+            if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                currentSection = section.getAttribute("id");
+            }
+        });
+
+        setActiveSection(currentSection);
+    };
+
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
+    const navLinks = <>
+        <li>
+            <a
+                href="#home"
+                onClick={(e) => {
+                    e.preventDefault();
+                    const target = document.getElementById('home');
+                    window.scrollTo({
+                        top: target.offsetTop - 105, // Fixed Navbar height
+                        behavior: "smooth",
+                    });
+                }}
+                className={`${activeSection === 'home' ? "text-[#01EEFF]" : "text-white cursor-pointer hover:text-[#01EEFF] hover:scale-105"}`}>
+                Home
+            </a>
+        </li>
+        <li>
+            <a 
+                href="#aboutMe"
+                onClick={(e) => {
+                    e.preventDefault();
+                    const target = document.getElementById('aboutMe');
+                    window.scrollTo({
+                        top: target.offsetTop - 105, // Fixed Navbar height
+                        behavior: "smooth",
+                    });
+                }}
+                className={`${activeSection === 'aboutMe' ? "text-[#01EEFF]" : "text-white cursor-pointer hover:text-[#01EEFF] hover:scale-105"}`}>
+                About Me
+            </a>
+        </li>
+        <li>
+            <a 
+                href="#skills"
+                onClick={(e) => {
+                    e.preventDefault();
+                    const target = document.getElementById('skills');
+                    window.scrollTo({
+                        top: target.offsetTop - 105, // Fixed Navbar height
+                        behavior: "smooth",
+                    });
+                }}
+                className={`${activeSection === 'skills' ? "text-[#01EEFF]" : "text-white cursor-pointer hover:text-[#01EEFF] hover:scale-105"}`}>
+                Skills
+            </a>
+        </li>
+        <li>
+            <a 
+                href="#projects"
+                onClick={(e) => {
+                    e.preventDefault();
+                    const target = document.getElementById('projects');
+                    window.scrollTo({
+                        top: target.offsetTop - 105, // Fixed Navbar height
+                        behavior: "smooth",
+                    });
+                }}
+                className={`${activeSection === 'projects' ? "text-[#01EEFF]" : "text-white cursor-pointer hover:text-[#01EEFF] hover:scale-105"}`}>
+                Projects
+            </a>
+        </li>
+        <li>
+            <a 
+                href="#contact"
+                onClick={(e) => {
+                    e.preventDefault();
+                    const target = document.getElementById('contact');
+                    window.scrollTo({
+                        top: target.offsetTop - 105, // Fixed Navbar height
+                        behavior: "smooth",
+                    });
+                }}
+                className={`${activeSection === 'contact' ? "text-[#01EEFF]" : "text-white cursor-pointer hover:text-[#01EEFF] hover:scale-105"}`}>
+                Contact Me
+            </a>
+        </li>
+    </>
+
     return (
         <div className="py-2 sm:py-4 sticky top-0 z-10 backdrop-blur-md">
             <div className="w-11/12 md:w-10/12 mx-auto py-2 px-2 sm:px-4 rounded-xl border-2 border-[#01EEFF] bg-black">
@@ -24,12 +129,8 @@ const Navbar = () => {
                             </div>
                             <ul
                                 tabIndex={0}
-                                className="menu menu-sm dropdown-content bg-black text-white rounded-box z-[1] mt-3 w-max p-2 shadow">
-                                <li className="hover:text-[#01EEFF] hover:scale-105"><a href="#">Home</a></li>
-                                <li className="hover:text-[#01EEFF] hover:scale-105"><a href="#aboutMe">About Me</a></li>
-                                <li className="hover:text-[#01EEFF] hover:scale-105"><a href="#skills">Skills</a></li>
-                                <li className="hover:text-[#01EEFF] hover:scale-105"><a href="#projects">Projects</a></li>
-                                <li className="hover:text-[#01EEFF] hover:scale-105"><a href="#contact">Contact Me</a></li>
+                                className="menu menu-sm dropdown-content bg-black rounded-box z-[1] mt-3 w-max p-2 shadow">
+                                {navLinks}
                             </ul>
                         </div>
                         <a href="#">
@@ -37,12 +138,8 @@ const Navbar = () => {
                         </a>
                     </div>
                     <div className="navbar-center hidden sm:flex">
-                        <ul className="flex justify-center items-center gap-3 text-white font-semibold md:text-lg xl:text-xl">
-                            <li className="hover:text-[#01EEFF] hover:scale-105"><a href="#">Home</a></li>
-                            <li className="hover:text-[#01EEFF] hover:scale-105"><a href="#aboutMe">About Me</a></li>
-                            <li className="hover:text-[#01EEFF] hover:scale-105"><a href="#skills">Skills</a></li>
-                            <li className="hover:text-[#01EEFF] hover:scale-105"><a href="#projects">Projects</a></li>
-                            <li className="hover:text-[#01EEFF] hover:scale-105"><a href="#contact">Contact Me</a></li>
+                        <ul className="flex justify-center items-center gap-3 font-semibold md:text-lg xl:text-xl">
+                            {navLinks}
                         </ul>
                     </div>
                     <div>

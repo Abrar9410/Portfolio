@@ -3,7 +3,7 @@ import myPhoto from "../assets/Abrar_Shahriar.JPG"
 
 const Banner = () => {
     return (
-        <div className="w-11/12 md:w-10/12 mx-auto mb-14 flex flex-col md:flex-row md:justify-between items-center bg-gradient-to-b md:bg-gradient-to-r from-[#151925] to-black relative">
+        <section id="home" className="w-11/12 md:w-10/12 mx-auto mb-14 flex flex-col md:flex-row md:justify-between items-center bg-gradient-to-b md:bg-gradient-to-r from-[#151925] to-black relative">
             <div className="flex flex-col max-md:items-center max-md:text-center gap-1 min-[500px]:gap-2 md:gap-3 xl:gap-4 md:w-1/2 py-4 md:pl-4">
                 <p className="text-white min-[300px]:text-lg min-[400px]:text-xl md:text-2xl xl:text-3xl 2xl:text-4xl font-semibold">Hello, I'm</p>
                 <h1 className="text-white text-xl min-[300px]:text-2xl min-[400px]:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-extrabold">
@@ -21,7 +21,7 @@ const Banner = () => {
             </div>
             <div className="md:w-1/2 flex flex-col items-center md:justify-end md:flex-row md:items-end gap-4 xl:gap-8">
                 <div className="md:absolute md:transform md:left-1/2 md:-translate-x-1/2 pb-4">
-                    <a href="https://docs.google.com/document/d/158UG5AVEV32-nVw1K7W2syifY38xzWvu_Q58PEG1uog/edit?usp=sharing" target="_blank">
+                    <a href="https://drive.google.com/file/d/17htC_1urOAdcoxOdCOAdeWaiYnI55BmC/view?usp=drive_link" target="_blank">
                         <button className="w-max flex justify-center items-center gap-1 text-center min-[300px]:text-lg md:text-base lg:text-lg px-3 py-2 rounded-lg bg-[#01EEFF] text-white font-bold hover:bg-white hover:text-[#01EEFF] hover:scale-105 outline-none">
                             Download CV
                             <FaDownload />
@@ -32,7 +32,7 @@ const Banner = () => {
                     <img src={myPhoto} alt="Abrar's Image" className="w-full max-h-[700px]" />
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

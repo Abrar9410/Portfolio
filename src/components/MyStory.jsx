@@ -8,7 +8,7 @@ const MyStory = () => {
     const [fullStory, setFullStory] = useState(false)
 
     return (
-        <div id="aboutMe" className="mb-14">
+        <section id="aboutMe" className="mb-14">
             <Title title="My Story"></Title>
             <div className="bg-black w-11/12 md:w-1/2 mx-auto p-8 rounded-xl flex flex-col sm:flex-row items-center sm:items-start gap-4">
                 <div className="w-1/2 rounded-lg">
@@ -60,7 +60,7 @@ const MyStory = () => {
                     }
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 
