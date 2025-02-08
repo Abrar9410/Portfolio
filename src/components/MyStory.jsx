@@ -1,6 +1,7 @@
-import myPhoto2 from "../assets/Abrar_Shahriar2.JPG"
 import { useState } from "react";
 import Title from "./Title";
+import Lottie from "lottie-react";
+import myStory from "../assets/My_tory.json";
 
 
 const MyStory = () => {
@@ -12,9 +13,9 @@ const MyStory = () => {
             <Title title="My Story"></Title>
             <div className="bg-black w-11/12 md:w-1/2 mx-auto p-8 rounded-xl flex flex-col sm:flex-row items-center sm:items-start gap-4">
                 <div className="w-1/2 rounded-lg">
-                    <img src={myPhoto2} alt="Abrar's Photo" className="w-full rounded-lg"/>
+                    <Lottie animationData={myStory}></Lottie>
                 </div>
-                <div className="w-full sm:w-1/2 flex flex-col items-center gap-4">
+                <div className="w-full sm:w-1/2 flex flex-col items-center gap-6">
                     {
                         fullStory?
                         <>
@@ -53,7 +54,9 @@ const MyStory = () => {
                                     a B.Sc. (Hons.) in Mathematics at the University of Chittagong, driven by my
                                     fascination with problem-solving and logical thinking. Despite performing well
                                     academically, I gradually realized that traditional education didn't fuel my
-                                    desire for creativity...
+                                    desire for creativity. However, those years introduced me to programming
+                                    through minor courses involving Mathematica and Fortran, sparking my interest
+                                    in coding.
                             </p>
                             <button onClick={() => setFullStory(true)} className="w-max text-sm sm:text-base font-semibold px-2 py-1 rounded-lg text-white bg-[#01EEFF] hover:text-[#01EEFF] hover:bg-white outline-none">Read More</button>  
                         </>

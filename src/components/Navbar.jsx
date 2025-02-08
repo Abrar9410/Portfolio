@@ -143,7 +143,16 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div>
-                        <a href="#contact">
+                        <a
+                            href="#contact"
+                            onClick={(e) => {
+                                e.preventDefault();
+                                const target = document.getElementById('contact');
+                                window.scrollTo({
+                                    top: target.offsetTop - 105, // Fixed Navbar height
+                                    behavior: "smooth",
+                                });
+                            }}>
                             <button className="w-max flex justify-center items-center gap-1 text-center min-[300px]:text-lg px-3 py-2 rounded-lg bg-[#01EEFF] text-white font-bold hover:bg-white hover:text-[#01EEFF] hover:scale-105 outline-none">
                                 Hire Me
                                 <MdArrowOutward />

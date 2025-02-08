@@ -14,7 +14,7 @@ const Banner = () => {
                 <p className="text-white/80 text-sm min-[300px]:text-base lg:text-lg xl:text-xl 2xl:text-2xl">with a passion for creating beautiful and responsive websites.</p>
                 <p className="text-white min-[300px]:text-lg min-[400px]:text-xl md:text-2xl font-semibold">Find Me On:</p>
                 <div className="flex items-center gap-4 lg:gap-6">
-                    <a href="" target="_blank" className="hover:scale-105"><FaLinkedin className="text-[#0E76A8] bg-white text-2xl lg:text-3xl"/></a>
+                    <a href="https://www.linkedin.com/in/abrar-shahriar-10sm" target="_blank" className="hover:scale-105"><FaLinkedin className="text-[#0E76A8] bg-white text-2xl lg:text-3xl"/></a>
                     <a href="https://github.com/Abrar9410" target="_blank" className="hover:scale-105"><FaGithub className="text-[#171515] bg-white rounded-full text-2xl lg:text-3xl"/></a>
                     <a href="https://www.facebook.com/profile.php?id=61551634958282" target="_blank" className="hover:scale-105"><FaFacebook className="text-[#1877F2] bg-white rounded-full text-2xl lg:text-3xl"/></a>
                 </div>
