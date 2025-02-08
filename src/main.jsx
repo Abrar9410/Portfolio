@@ -5,6 +5,8 @@ import './index.css';
 import App from './App.jsx';
 import { ToastContainer } from 'react-toastify';
 import CareCamp from './components/CareCamp.jsx';
+import TrendyTalks from './components/TrendyTalks.jsx';
+import ChillGamer from './components/ChillGamer.jsx';
 
 const router = createBrowserRouter([
   {
@@ -17,11 +19,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/projects/TrendyTalks",
-    element: <App></App>,
+    element: <TrendyTalks></TrendyTalks>,
   },
   {
     path: "/projects/ChillGamer",
-    element: <App></App>,
+    element: <ChillGamer></ChillGamer>,
   },
 ]);
 

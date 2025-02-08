@@ -1,8 +1,12 @@
 import { Link } from "react-router-dom";
 import carecampImg from "../assets/project-a12(1).PNG"
 import Title from "./Title";
+import { useEffect } from "react";
 
 const CareCamp = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
     return (
         <div className="w-11/12 md:w-10/12 mx-auto py-12 text-white">
             <div className="mb-6">

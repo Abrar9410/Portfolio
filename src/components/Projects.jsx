@@ -35,7 +35,7 @@ const Projects = () => {
                             <Link to="https://github.com/Abrar9410/TrendyTalks" target="_blank">
                                 <button className="w-max text-sm sm:text-base font-semibold px-2 py-1 rounded-lg text-white bg-[#01EEFF] hover:text-[#01EEFF] hover:bg-white outline-none">GitHub Repo</button>
                             </Link>
-                            <Link to="https://asssignment-11-trendy-talks-blog-site.netlify.app/" target="_blank">
+                            <Link to="https://trendy-talks-blog-site.netlify.app/" target="_blank">
                                 <button className="w-max text-sm sm:text-base font-semibold px-2 py-1 rounded-lg text-white bg-[#01EEFF] hover:text-[#01EEFF] hover:bg-white outline-none">Live Link</button>
                             </Link>
                         </div>

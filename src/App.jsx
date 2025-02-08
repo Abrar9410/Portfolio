@@ -4,11 +4,12 @@ import MyStory from "./components/MyStory"
 import Navbar from "./components/Navbar"
 import Projects from "./components/Projects"
 import Skills from "./components/Skills"
+import useScrollRestoration from "./hooks/useScrollRestoration"
 
 
 function App() {
   
-
+  useScrollRestoration();
 
   return (
     <>
